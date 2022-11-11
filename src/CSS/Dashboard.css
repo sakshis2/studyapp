@@ -1,0 +1,99 @@
+.upDashboard{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.leftDashboard{
+    /* 
+    margin-left: 10px;
+    width: fit-content; */
+    border: 1px solid red;
+    position: absolute;
+    width: 438px;
+    height: 500px;
+    left: 153.5px;
+    top: 70px;
+    background: #eae2ec;
+
+}
+.rightDashboard{
+    /* border: 1px solid blue;
+    float: right;
+    margin-left: 25%; */
+    border: 1px solid red;
+    position: absolute;
+    width: 429px;
+    height: 500px;
+    left: 813px;
+    top: 70px;
+    background: #e9e0ec;
+}
+.bottomDashboard
+{
+    border: 1px solid red;
+    position: absolute;
+    width: 1293px;
+    height: 279px;
+    left: 71px;
+    top: 724px;
+    background: #dbd4dd;
+    margin-left: 6%;
+}
+.backgroundDashboard
+{
+    position: relative;
+    width: 1550px;
+    height: 1024px;
+    background-color: rgb(241, 241, 225);
+}
+
+/* .play-button-outer {
+    margin: 25% auto;
+    width: 10em;
+    height: 10em;
+    background-color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+  }
+   */
+  .play-button {
+    margin: 0 auto;
+    left: 330px;
+    top: 636px;
+    position: relative;  
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5em 0 2.5em 5em;
+    border-color: transparent transparent transparent #000;
+    opacity: .75; 
+  }
+  
+  .play-button-outer:hover {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  
+  .play-button-outer:hover .play-button {
+    opacity: 1;
+  }
+  .questions
+  {
+    display: flex;
+    flex-direction: row;
+    
+    
+
+    
+  }
+  .question
+  {
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-color: transparent transparent transparent #000;
+  }
+
+  .answer
+  {
+    
+    
+  }
