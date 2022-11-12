@@ -9,7 +9,6 @@ function Home() {
       </h2>
       <h2>
       <Link to="/signup">signup</Link>
-
       </h2>
     </div> 
   )
