@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../CSS/Dashboard.css";
+// import "../CSS/Dashboard.css";
 
 function Question({ ques, sAns }) {
   const submitAnswer = (e) => {
@@ -11,38 +11,38 @@ function Question({ ques, sAns }) {
   }, [ques.id]);
 
   return (
-    <div className="flex bg-sky-500 m-4">
-      <div className="w-full p-2">{ques.Name}</div>
-      <div className="flex w-fit gap-4" onChange={(e) => submitAnswer(e)}>
-        <div className="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
+    <div className="flex flex-col bg-sky-500 m-4 sm:flex-row p-2">
+      {/* {console.log(ques.id)} */}
+      <div className="w-full flex m-4 self-center ">{ques.Name}</div>
+      <div className="flex w-fit gap-4">
+        <div className="flex m-4 items-center mr-0 pl-4 rounded border border-gray-200 dark:border-gray-700">
           <input
             type="radio"
-            defaultValue=""
+            // defaultValue=""
             id="no"
             name={ques.id}
             value="no"
             className=" w-10  h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           />
           <label
-            // htmlFor={ques.id}
-            // name={ques.id}
+            htmlFor={ques.id}
             className="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300"
           >
             No
           </label>
         </div>
-        <div className="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
+        <div className="flex m-4 ml-0 items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
           <input
-            defaultChecked=""
+            // defaultChecked=""
             type="radio"
-            defaultValue=""
+            // defaultValue=""
             id="yes"
             name={ques.id}
             value="yes"
             className="w-10 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           />
           <label
-            // htmlFor="yes"
+            htmlFor={ques.id}
             className="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300"
           >
             Yes
