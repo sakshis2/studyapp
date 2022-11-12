@@ -1,25 +1,24 @@
 {
-    "ques":[
-        {
-            "id":1,
-            "Name":"S"
-        },
-        {
-            "id":2,
-            "Name":"S2"
-        },
-        {
-            "id":3,
-            "Name":"S3"
-        },
-        {
-            "id":4,
-            "Name":"S4"
-        },
-        {
-            "id":5,
-            "Name":"S5"
-        }
-
-    ]
+  "ques": [
+    {
+      "id": 1,
+      "Name": "What are the different data types present in javascript?"
+    },
+    {
+      "id": 2,
+      "Name": "Difference between var and let keyword in javascript."
+    },
+    {
+      "id": 3,
+      "Name": "What are the different data types present in javascript?"
+    },
+    {
+      "id": 4,
+      "Name": "Difference between var and let keyword in javascript."
+    },
+    {
+      "id": 5,
+      "Name": "What are the different data types present in javascript?"
+    }
+  ]
 }
