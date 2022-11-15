@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState, Fragment } from "react";
-import "../CSS/Dashboard.css";
 import Question from "./Question";
 import QuestionList from "./Question.json";
 import app from "../firebase";

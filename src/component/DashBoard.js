@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import BottomDashboard from "./BottomDashboard";
-import "../CSS/Dashboard.css";
 import { createClient } from "pexels";
-// import parse from "html-react-parser";
 
 function DashBoard({ email, setLogin, sethandleEmail }) {
   const videoOneRef = useRef();
@@ -53,50 +51,7 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
         });
     };
     pixelApi();
-
-    // const options = {
-    //   method: "GET",
-    //   headers: {
-    //     "X-RapidAPI-Key": "b6cf77fb79msh26a7e107983fd41p1dde5bjsnf78a945546e1",
-    //     "X-RapidAPI-Host": "free-football-soccer-videos.p.rapidapi.com",
-    //   },
-    // };
-    // const fetchData = async () => {
-    //   try {
-    //     let data = await fetch(
-    //       "https://free-football-soccer-videos.p.rapidapi.com/",
-    //       options
-    //     );
-    //     let apiData = await data.json(0);
-    //     let videoStringArr = [];
-    //     setVideosData((prev) => {
-    //       apiData.map((e) => {
-    //         videoStringArr.push(e?.videos[0].embed);
-    //       });
-    //       return videoStringArr;
-    //     });
-    //     // let src = apiData[0]?.videos[0].embed;
-    //     // console.log(src);
-    //     // let src = apiData[0]?.videos[0]?.embed;
-    //     // src = src.split(" ");
-    //     // for (let i = 0; i < src.length; i++) {
-    //     //   if (src[i].includes("src")) {
-    //     //     src = src[i];
-    //     //     break;
-    //     //   }
-    //     // }
-    //     // src = src.slice(5, -1);
-    //     // console.log(videosData);
-
-    //     // console.log(typeof src);
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // };
-    // fetchData();
   }, []);
-  // const videoOne = parse(videosData[0]);
-  // const videoTwo = parse(videosData[1]);
   return (
     <>
       {isLoading ? (
