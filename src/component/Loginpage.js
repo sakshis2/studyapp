@@ -7,6 +7,7 @@ import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 export default function Loginpage() {
   const [handleEmail, sethandleEmail] = useState("");
   const [firstname, setfirstName] = useState("");
+  const [language, setLanguage] = useState("English");
   const [login, setLogin] = useState(false);
   const db = getFirestore(app);
   const coll = collection(db, "login");
@@ -18,6 +19,7 @@ export default function Loginpage() {
       addDoc(coll, {
         email: handleEmail,
         firstName: firstname,
+        language: language,
       }).then(() => {
         console.log(handleEmail);
         setLogin(true);
@@ -76,6 +78,14 @@ export default function Loginpage() {
                       onChange={(e) => setfirstName(e.target.value)}
                       className="text-sm  px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400"
                     />
+                  </div>
+                  <div>
+                  {/* <label for="language">language</label> */}
+                  <select name="language" id="language" onChange={(e) => setLanguage(e.target.value)}>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Spanish">Spanish</option>
+                  </select>
                   </div>
 
                   <div className="flex items-center justify-between">

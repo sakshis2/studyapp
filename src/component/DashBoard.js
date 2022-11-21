@@ -137,6 +137,7 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
                     autoPlay={false}
                     loop
                   ></video>
+                  <div className="flex gap-4">
                   <div
                     className="bg-violet-600 rounded-md mt-4 p-2"
                     onClick={(e) => {
@@ -169,6 +170,13 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
                         <path d="M15.7 38.4V9.3l22.85 14.55Zm3.4-14.55Zm0 8.35 13.15-8.35L19.1 15.5Z" />
                       </svg>
                     )}
+                    </div>
+                  <div  className="bg-violet-600 rounded-md mt-4 p-2" onClick={() => {
+                    videoOneRef.current.currentTime = videoOneRef.current.currentTime + 10;
+                  }} >
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M5.2 36V12l17.3 12Zm20.35 0V12l17.3 12ZM8.2 24Zm20.35 0ZM8.2 30.25 17.25 24 8.2 17.75Zm20.35 0L37.6 24l-9.05-6.25Z"/></svg>
+                  </div>
                   </div>
                 </div>
                 <div className="flex justify-center flex-col items-center">
@@ -185,6 +193,7 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
                     autoPlay={false}
                     loop
                   ></video>
+                  <div className="flex gap-4">
                   <div
                     className="bg-violet-600 rounded-md mt-4 p-2"
                     onClick={() => {
@@ -200,6 +209,7 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
                       }));
                     }}
                   >
+
                     {playPause.videoTwo ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -217,6 +227,15 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
                         <path d="M15.7 38.4V9.3l22.85 14.55Zm3.4-14.55Zm0 8.35 13.15-8.35L19.1 15.5Z" />
                       </svg>
                     )}
+
+                  </div>
+
+                  <div  className="bg-violet-600 rounded-md mt-4 p-2" onClick={() => {
+                    videoTwoRef.current.currentTime = videoTwoRef.current.currentTime + 10;
+                  }} >
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M5.2 36V12l17.3 12Zm20.35 0V12l17.3 12ZM8.2 24Zm20.35 0ZM8.2 30.25 17.25 24 8.2 17.75Zm20.35 0L37.6 24l-9.05-6.25Z"/></svg>
+                  </div>
                   </div>
                 </div>
               </>
