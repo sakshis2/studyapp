@@ -51,7 +51,8 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
         });
     };
     pixelApi();
-  }, [client.videos, natureVideo]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
   return (
     <>
       {isLoading ? (
