@@ -51,7 +51,7 @@ function DashBoard({ email, setLogin, sethandleEmail }) {
         });
     };
     pixelApi();
-  }, []);
+  }, [client.videos, natureVideo]);
   return (
     <>
       {isLoading ? (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DashBoard from "./DashBoard";
 import validator from "validator";
 import app from "../firebase";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 export default function Loginpage() {
   const [handleEmail, sethandleEmail] = useState("");
@@ -86,12 +86,12 @@ export default function Loginpage() {
 
                   <div className="flex items-center justify-between">
                     <div className="text-sm ml-auto">
-                      <a
+                      {/* <a
                         href="#"
                         className="text-purple-700 hover:text-purple-600"
                       >
                         Forgot your password?
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                   <div>
