@@ -11,10 +11,8 @@ export default function Loginpage() {
   const [login, setLogin] = useState(false);
   const db = getFirestore(app);
   const coll = collection(db, "login");
-  //const history = useHistory()
 
   const handleSubmit = () => {
-    // history.push("/dashboard");
     if (validate(handleEmail)) {
       addDoc(coll, {
         email: handleEmail,
@@ -25,12 +23,10 @@ export default function Loginpage() {
         setLogin(true);
         setfirstName("");
       });
-      // setLogin(true);
     }
   };
 
   const validate = (Email) => {
-    //const r = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
     if (validator.isEmail(Email)) {
       return true;
     }
